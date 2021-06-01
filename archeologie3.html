@@ -13,19 +13,18 @@
       </style>
 </head>
 <body>
-  <!-- <a-assets>
-    <a-asset-item id="burger" src="fusée.glb"></a-assets-item>
-  </a-assets> -->
-
-    <!-- <a-entity gltf-model="#burger" position="-0.8 0.15 -1.2" scale="0.09 0.09 0.09"
-          proximity-sensor="distance: 0.5; drawline: true"
-            animation= "property: position;
-                        to: -0.8 1.15 -1.2
-                        easing: easeOutQuad;
-                        dur: 2000;
-                        loop: 1;
-                        startEvents: proximityenter;
-                        resumeEvents: proximityenter;"></a-entity> -->
+  <a-box  proximity-sensor="distance: 0.5; drawline: true"
+          position="-0.8 -0.16 -1.2"
+          rotation="0 45 0"
+          color="black"
+          width="0.3" height="0.3" depth="0.3" side="both"
+          animation= "property: position;
+                      to: -0.8 0.16 -1.2
+                      easing: easeOutQuad;
+                      dur: 2000;
+                      loop: 1;
+                      startEvents: proximityenter;
+                      resumeEvents: proximityenter;"></a-box>
     <a-plane color="silver" height="3" width="3" rotation="-90 0 0"></a-plane>
 
     <a-entity id="camera" camera position="0 0.2 0"
