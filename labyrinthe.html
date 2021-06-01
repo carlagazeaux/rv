@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <img id="texture" src="texture1.jpg">
+      </a-assets>
+
+      <a-plane position="0 0 0" rotation="-90 0 0" width="3" height="3" color="white"></a-plane>
+      <a-box width="3" height="2" depth="0.01" position="0 1 1.5" rotation="0 0 0" src="#texture"  ></a-box>
+      <a-box width="2" height="2" depth="0.01" position="-0.5 1 -1.5" rotation="0 0 0" src="#texture"  ></a-box>
+      <a-box width="3" height="2" depth="0.01" position="1.5 1 0" rotation="180 90 0" src="#texture"    ></a-box>
+      <a-box width="3" height="2" depth="0.01" position="-1.5 1 0" rotation="0 90 0" src="#texture"    ></a-box>
+
+
+      <a-box width="0.15" height="2" depth="0.01" position="-0.3 1 0.02" rotation="0 90 0" src="#texture"    ></a-box>
+      <a-box width="0.6" height="2" depth="0.01"position="0.3 1 0.24" rotation="180 90 0" src="#texture"    ></a-box>
+      <a-box width="0.6" height="2" depth="0.01" position="0 1 0.1" rotation="180 0 0" src="#texture"    ></a-box>
+
+      <a-box width="0.6" height="2" depth="0.01" position="0.6 1 0.54" rotation="180 0 0" src="#texture"    ></a-box>
+      <a-box width="1.3" height="2" depth="0.01" position="0.9 1 -0.11" rotation="0 90 0" src="#texture"    ></a-box>
+      <a-box width="0.6" height="2" depth="0.01" position="0.6 1 -0.76" rotation="180 0 0" src="#texture"    ></a-box>
+      <a-box width="0.75" height="2" depth="0.01" position="0.3 1 -1.13" rotation="180 90 0"src="#texture"    ></a-box>
+
+      <a-box width="0.6" height="2" depth="0.01" position="-1.2 1 -0.111" rotation="0 0 0" src="#texture"    ></a-box>
+      <a-box width="1.3" height="2" depth="0.01" position="-0.9 1 -0.1" rotation="0 90 0" src="#texture"    ></a-box>
+      <a-box width="0.6" height="2" depth="0.01" position="-0.6 1 -0.76" rotation="180 0 0" src="#texture"    ></a-box>
+
+      <a-box width="0.6" height="2" depth="0.01" position="-0.3 1 1.2" rotation="0 90 0" src="#texture"    ></a-box>
+
+      <a-sky color=gray></a-sky>
+      <a-camera position="0 1.6 0"></a-camera>
+    </a-scene>
+  </body>
+</html>
